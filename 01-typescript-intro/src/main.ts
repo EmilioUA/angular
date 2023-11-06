@@ -5,6 +5,9 @@ import { setupCounter } from './counter.ts'
 
 //import './topics/01-basic-types.ts'
 //import './topics/02-objects-interface.ts'
+import './topics/03-functions.ts'
+
+console.log('Formación en TypeScript');
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
