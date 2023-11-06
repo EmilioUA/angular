@@ -3,7 +3,7 @@ function addNumbers(num1: number, num2: number): number {
 }
 
 const result = addNumbers(1, 2);
-//console.log({result});
+console.log({result});
 
 const addNumbers2 = (num1: number, num2: number): string => {
     return `${num1 + num2}`;  //`${}` es una template string que permite interpolar variables.
@@ -11,15 +11,18 @@ const addNumbers2 = (num1: number, num2: number): string => {
 }
 
 const result2 = addNumbers2(1, 2);
-//console.log({result2});
+console.log({result2});
 
 
 function multiply(firstNumber: number, secondNumber?: number, base: number = 2): number {
+    if (secondNumber) {
+        return firstNumber * secondNumber;
+    }
     return firstNumber * base;
 }
 
 const result3 = multiply(5);
-//console.log({result3});
+console.log({result3});
 
 interface Character {
     name: string;
