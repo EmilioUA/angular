@@ -1,49 +1,44 @@
-function addNumbers(num1: number, num2: number): number {
-    return num1 + num2;
+
+function addNumbers(a: number, b: number):number{
+    return a + b
 }
 
-const result = addNumbers(1, 2);
-console.log({result});
-
-const addNumbers2 = (num1: number, num2: number): string => {
-    return `${num1 + num2}`;  //`${}` es una template string que permite interpolar variables.
-    //Inyección de una expresión de JavaScript dentro de una template literal
+const addNumbersArrow = (a: number, b: number):string =>{
+    return `${a + b}`
 }
 
-const result2 = addNumbers2(1, 2);
-console.log({result2});
-
-
-function multiply(firstNumber: number, secondNumber?: number, base: number = 2): number {
-    if (secondNumber) {
-        return firstNumber * secondNumber;
-    }
-    return firstNumber * base;
+function multiply(firstNumber: number, secondNumber?: number, base: number = 2){
+    return firstNumber * base
 }
 
-const result3 = multiply(5);
-console.log({result3});
+const result: number = addNumbers(1, 2)
+const result2: string = addNumbersArrow(1, 2)
+const multyplyResult: number = multiply(5)
+//console.log({result, result2, multyplyResult})
 
-interface Character {
+interface Character{
     name: string;
     hp: number;
+    skills: string[];
+    hometown?: string;
     showHp: () => void;
 }
-
 
 const healCharacter = (character: Character, amount: number) => {
     character.hp += amount;
 }
 
 const strider: Character = {
-    name: 'Strider',
+    name: "Strider",
     hp: 50,
+    skills: ["Bash", "Counter"],
     showHp() {
-        console.log('Health points', this.hp);
+        console.log(`Puntos de vida ${this.hp}`)
     },
 }
 
+strider.showHp();
 healCharacter(strider, 10);
 strider.showHp();
 
-export{}
+export {}

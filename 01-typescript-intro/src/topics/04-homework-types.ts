@@ -1,17 +1,17 @@
 /*
     ===== Código de TypeScript =====
 */
-interface Address {
-    street: string;
-    country: string;
-    city: string;
-}
-
-interface SuperHero {
+interface SuperHero{
     name: string;
     age: number;
     address: Address;
-    showAddress: () => string;
+    showAddress: () => string
+}
+
+interface Address{
+    street: string;
+    country: string;
+    city: string;
 }
 
 const superHeroe: SuperHero = {
@@ -27,8 +27,10 @@ const superHeroe: SuperHero = {
     }
 }
 
+
 const address = superHeroe.showAddress();
 console.log( address );
+
 
 
 

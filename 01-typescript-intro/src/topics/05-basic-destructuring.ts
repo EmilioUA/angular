@@ -1,17 +1,17 @@
 interface AudioPlayer{
-    audioVolume: number;
+    audioVolumen: number;
     songDuration: number;
     song: string;
-    details: SongDetails;
+    details: Details;
 }
 
-interface SongDetails{
+interface Details{
     author: string;
     year: number;
 }
 
 const audioPlayer: AudioPlayer = {
-    audioVolume: 90,
+    audioVolumen: 90,
     songDuration: 36,
     song: "Mess",
     details: {
@@ -20,22 +20,18 @@ const audioPlayer: AudioPlayer = {
     }
 }
 
-const song = 'New song';
+//Desestructuración en muchos sitios vaya
 
-const {
-    song:anotherSong, 
-    songDuration:duration, 
-    details
-} = audioPlayer;
+const { song: anotherSong, songDuration, details } = audioPlayer;
+const { author, year } = details;
 
-console.log(anotherSong, duration);
-const {author} = details;
-console.log(author);
+console.log("Song: ", anotherSong)
+console.log("Duration: ", songDuration)
+console.log("Author: ", author, "Year: ", year)
 
-const dbz: string[] = ["Goku", "Vegeta", "Trunks"];
+const [, , trunks = 'Not found']: string[] = ["Goku", "Vegeta", "Trunks"];
 
-const [, , trunks = 'Not found'] = dbz;
-console.log(trunks);
+console.log("3: ", trunks)
 
-//Resumir lineas de codigo, desestructurando un objeto
-export {}
+
+export{}
