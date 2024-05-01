@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Wiki Star Wars</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list-header>
+    <ion-label size="large">Categories</ion-label>
+  </ion-list-header>
+  <ion-list>
+    <app-category
+      *ngFor="let cat of categories"
+      [theCategory]="cat"
+      [selected]="selectedCategory===cat.name"
+      (clicked)="categorySelected($event)"
+    ></app-category>
+  </ion-list>
+</ion-content>

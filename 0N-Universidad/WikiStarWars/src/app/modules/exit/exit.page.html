@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Exit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="body-container">
+    <ion-card-header>
+      <p>Are you sure you want to close this app?</p>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-button color="primary" id="close-app"> YES </ion-button>
+        <ion-alert
+          trigger="close-app"
+          header="You close the app!"
+          subHeader="Only works on a mobile device."
+          message="You can close this pop up now."
+          [buttons]="alertButtons"
+          routerLink="/tabs/wiki"
+        ></ion-alert>
+        <ion-button color="danger" routerLink="/tabs/wiki"> NO </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
