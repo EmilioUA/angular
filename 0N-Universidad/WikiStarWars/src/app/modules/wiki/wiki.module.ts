@@ -6,9 +6,9 @@ import { NgModule } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
 import { CategoryComponent } from './category/category.component';
-import { WikiPage } from './wiki.component';
+import { WikiPage } from './wiki.page.component';
 import { WikiPageRoutingModule } from './wiki-routing.module';
-import { WikiService } from './wiki.service';
+import { WikiService } from '../../services/wiki.service';
 
 @NgModule({
   imports: [

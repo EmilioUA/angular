@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { WikiPage } from './wiki.component';
+import { WikiPage } from './wiki.page.component';
 
 describe('WikiPage', () => {
   let component: WikiPage;

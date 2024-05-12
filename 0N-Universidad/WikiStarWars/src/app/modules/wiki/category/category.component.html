@@ -12,7 +12,10 @@
 
 <ion-item *ngIf="selected">
   <ion-list>
-    <ion-item *ngFor="let article of articles">
+    <ion-item
+      *ngFor="let article of articles"
+      [href]="generateURL(theCategory.name, article.uid)"
+    >
       {{ article.name }}
     </ion-item>
   </ion-list>

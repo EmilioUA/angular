@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { WikiService } from './wiki.service';
+import { WikiService } from '../../services/wiki.service';
 
 describe('WikiService', () => {
   let service: WikiService;
