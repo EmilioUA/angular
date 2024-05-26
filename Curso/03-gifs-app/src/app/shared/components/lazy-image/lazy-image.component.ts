@@ -4,8 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'shared-lazy-image',
   templateUrl: './lazy-image.component.html',
 })
-export class LazyImageComponent implements OnInit{
-
+export class LazyImageComponent implements OnInit {
   @Input()
   public url!: string;
 
@@ -15,13 +14,12 @@ export class LazyImageComponent implements OnInit{
   public hasLoaded: boolean = false;
 
   ngOnInit(): void {
-    if( !this.url ) throw new Error('URL property is required.');
+    if (!this.url) throw new Error('URL property is required.');
   }
 
-  onLoad(){
+  onLoad() {
     setTimeout(() => {
       this.hasLoaded = true;
-    }, 100) 
+    }, 100);
   }
-
 }

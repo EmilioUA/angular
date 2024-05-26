@@ -5,17 +5,16 @@ import { GifsService } from '../../../gifs/services/gifs.service';
 @Component({
   selector: 'shared-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
-
-  constructor(private gifsService: GifsService) { }
+  constructor(private gifsService: GifsService) {}
 
   get tags(): string[] {
-    return this.gifsService.tagsHistory
+    return this.gifsService.tagsHistory;
   }
 
   searchGifs(tag: string): void {
-    this.gifsService.searchTag(tag)
+    this.gifsService.searchTag(tag);
   }
 }

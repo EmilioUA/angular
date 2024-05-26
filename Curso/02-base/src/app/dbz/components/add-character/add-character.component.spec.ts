@@ -11,9 +11,8 @@ describe('AddCharacterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddCharacterComponent ]
-    })
-    .compileComponents();
+      declarations: [AddCharacterComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -8,22 +8,9 @@ import { CardListComponent } from './components/card-list/card-list.component';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 
-
 @NgModule({
-  declarations: [
-    CardComponent,
-    CardListComponent,
-    HomePageComponent,
-    SearchBoxComponent,
-  ],
-  imports: [
-    CommonModule,
-    SharedModule,
-  ],
-  exports: [
-    CardListComponent,
-    HomePageComponent,
-    SearchBoxComponent,
-  ]
+  declarations: [CardComponent, CardListComponent, HomePageComponent, SearchBoxComponent],
+  imports: [CommonModule, SharedModule],
+  exports: [CardListComponent, HomePageComponent, SearchBoxComponent],
 })
-export class GifsModule { }
+export class GifsModule {}

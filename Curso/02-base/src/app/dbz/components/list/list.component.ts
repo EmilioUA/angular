@@ -4,30 +4,28 @@ import { Character } from '../../interfaces/character.interface';
 @Component({
   selector: 'dbz-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  styleUrls: ['./list.component.css'],
 })
 export class ListComponent implements OnInit {
-
   @Input()
-  public characterList: Character[] = [{
-    name: 'Trunks',
-    power: 10
-  }];
+  public characterList: Character[] = [
+    {
+      name: 'Trunks',
+      power: 10,
+    },
+  ];
 
   @Output()
-  onDelete: EventEmitter<string>
-
+  onDelete: EventEmitter<string>;
 
   onDeleteCharacter(id?: string): void {
     if (!id) return;
-    this.onDelete.emit(id)
+    this.onDelete.emit(id);
   }
 
-  constructor() { 
+  constructor() {
     this.onDelete = new EventEmitter();
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
