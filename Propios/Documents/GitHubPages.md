@@ -10,7 +10,7 @@ Despliegue a github pages:
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:href": "ng build --base-href",
+    "build:href": "ng build --base-href ./",
     "build:github": "npm run delete:docs && npm run delete:dist && npm run build:href && npm runcopy:dist && npm run delete:dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
