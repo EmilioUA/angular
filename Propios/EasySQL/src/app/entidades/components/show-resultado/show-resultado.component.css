@@ -1,0 +1,34 @@
+.result-container {
+  background-color: #5b6065;
+  color: #e1e1e1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.code-container {
+  position: relative;
+}
+
+.copy-button,
+.download-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.copy-button {
+  right: 40px;
+}
+
+.copy-button:hover,
+.download-button:hover {
+  background-color: #ccc;
+}
+
+code {
+  font-family: monospace;
+  white-space: pre;
+}

@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="search-container">
+    <input
+      type="text"
+      [placeholder]="'Nombre de la ' + entidad"
+      class="form-control"
+      [(ngModel)]="tableName"
+    />
+  </div>
+
+  <div class="search-container">
+    <input type="text" placeholder="Descripción" class="form-control" [(ngModel)]="description" />
+  </div>
+
+  <div class="variable-container" *ngFor="let column of columns; let i = index">
+    <input
+      type="text"
+      [placeholder]="entidad === 'procedimiento' ? 'Nombre del parametro' : 'Nombre de la columna'"
+      class="form-control"
+      [(ngModel)]="columns[i].name"
+    />
+    <input
+      type="text"
+      [placeholder]="entidad === 'tabla de literales' ? 'Tamaño del varchar' : 'Tipo'"
+      class="form-control"
+      [(ngModel)]="columns[i].type"
+    />
+    <input
+      *ngIf="entidad !== 'tabla de literales'"
+      type="text"
+      placeholder="Descripción"
+      class="form-control"
+      [(ngModel)]="columns[i].description"
+    />
+    <button class="btn btn-danger" (click)="removeColumn(i)">Eliminar</button>
+  </div>
+  <div class="button-container">
+    <button class="btn btn-link" (click)="addColumn()">
+      {{ entidad === 'procedimiento' ? 'Añadir parametro' : 'Añadir columna' }}
+    </button>
+  </div>
+  <div class="button-container">
+    <button class="btn btn-info custom-button" (click)="generateSearch()">Generar SQL</button>
+  </div>
+</div>

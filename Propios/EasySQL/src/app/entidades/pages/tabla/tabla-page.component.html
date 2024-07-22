@@ -1,0 +1,17 @@
+<h3>EasySql: Genera tabla</h3>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <shared-generate-box (onValue)="load($event)" [entidad]="'tabla'"></shared-generate-box>
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="col">
+    <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
+    <app-show-resultado *ngIf="!isLoading && hasSendToGenerate" [sql]="sql"></app-show-resultado>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<h3>Entidades</h3>
+<hr />
+
+<ul class="list-group">
+  <li
+    *ngFor="let item of navItems"
+    [routerLink]="item.link"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    {{ item.text }}
+  </li>
+</ul>
