@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -13,8 +13,7 @@
       "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne",
       "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne",
-      "alt_img": ""
+      "characters": "Bruce Wayne"
     },
     {
       "id": "dc-superman",
@@ -22,8 +21,15 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El",
-      "alt_img": "https://i.pinimg.com/originals/81/28/7b/81287b176108edb4e6f50083c056587b.jpg"
+      "characters": "Kal-El"
+    },
+    {
+      "id": "dc-flash",
+      "superhero": "Flash",
+      "publisher": "DC Comics",
+      "alter_ego": "Jay Garrick",
+      "first_appearance": "Flash Comics #1",
+      "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
     },
     {
       "id": "dc-green",
@@ -50,12 +56,28 @@
       "characters": "Princess Diana"
     },
     {
+      "id": "dc-martian",
+      "superhero": "Martian Manhunter",
+      "publisher": "DC Comics",
+      "alter_ego": "J\"onn J\"onzz",
+      "first_appearance": "Detective Comics #225",
+      "characters": "Martian Manhunter"
+    },
+    {
       "id": "dc-robin",
       "superhero": "Robin/Nightwing",
       "publisher": "DC Comics",
       "alter_ego": "Dick Grayson",
       "first_appearance": "Detective Comics #38",
       "characters": "Dick Grayson"
+    },
+    {
+      "id": "dc-blue",
+      "superhero": "Blue Beetle",
+      "publisher": "DC Comics",
+      "alter_ego": "Dan Garret",
+      "first_appearance": "Mystery Men Comics #1",
+      "characters": "Dan Garret, Ted Kord, Jaime Reyes"
     },
     {
       "id": "dc-black",
@@ -144,24 +166,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "Haq6kp7",
-      "superhero": "Bruja escarlata",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Wanda Maximoff",
-      "first_appearance": "The X-Men vol. 1 #4",
-      "characters": "Wanda Maximoff",
-      "alt_img": "https://i.pinimg.com/originals/32/f5/ee/32f5ee1e1e7ebe646e2cb283a626e3b5.jpg"
-    },
-    {
-      "id": "jAggAJP",
-      "superhero": "Ant-Man",
-      "publisher": "DC Comics",
-      "alter_ego": "Scott Lang",
-      "first_appearance": "Marvel Premiere #47",
-      "characters": "Scott Lang",
-      "alt_img": "https://www.comicbookrevolution.com/wp-content/uploads/2019/11/Ant-Man-1.jpg"
     }
   ]
 }
