@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>¿Estás seguro de eliminar?</h2>
+<mat-dialog-content>
+  <p>Este proceso no es reversible, está a punto de elimar a {{ data.superhero }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button color="primary" mat-raised-button (click)="onCancel()">
+    Cancelar
+  </button>
+  <span class="spacer"></span>
+  <button mat-button color="warn" mat-raised-button (click)="onConfirm()">
+    Confirmar
+  </button>
+</mat-dialog-actions>

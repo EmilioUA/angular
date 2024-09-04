@@ -13,7 +13,6 @@ export class HeroImagePipe implements PipeTransform {
     }
 
     if (publisher){
-      console.log(`assets/${hero.publisher.replace(' ', '')}}.jpg`)
       return `assets/${hero.publisher.replace(' ', '')}.jpg`;
     }
 

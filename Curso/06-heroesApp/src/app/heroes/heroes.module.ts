@@ -11,6 +11,7 @@ import { NewHeroPageComponent } from './pages/new-hero-page/new-hero-page.compon
 import { MaterialModule } from '../material/material.module';
 import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
+import { ConfirmDialogComponent } from './components/confirmDialog/confirmDialog.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
     SearchPageComponent,
     NewHeroPageComponent,
     CardComponent,
-    HeroImagePipe
+    HeroImagePipe,
+    ConfirmDialogComponent,
   ],
   imports: [
     CommonModule,

@@ -36,9 +36,16 @@ export class HeroPageComponent implements OnInit, OnChanges {
     if (this.heroId) {
       this.callApi(this.heroId);
     } else {
-      this.activatedRoute.params.pipe(
-        switchMap(async ({ id }) => this.callApi(id))
-      );
+      this.activatedRoute.params
+        .pipe(switchMap(({ id }) => this.heroService.getHeroById(id)))
+        .subscribe((hero) => {
+          if (!hero) {
+            return this.router.navigate(['/heroes/list']);
+          }
+
+          this.hero = hero;
+          return;
+        });
     }
   }
 
